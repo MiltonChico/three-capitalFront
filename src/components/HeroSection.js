@@ -15,7 +15,7 @@ function HeroSection() {
 
     async function getData() {
       setLoading(true)
-      axios('http://localhost:8080/results')
+      axios('https://tranquil-bublanina-ce395c.netlify.app/results')
       .then(response => {
           setInfo(response.data[0])
           setLoading(false)
