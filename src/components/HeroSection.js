@@ -15,7 +15,7 @@ function HeroSection() {
 
     async function getData() {
       setLoading(true)
-      axios('https://ec2-44-214-241-21.compute-1.amazonaws.com:8080/results')
+      axios('http://ec2-44-214-241-21.compute-1.amazonaws.com:8080/results')
       .then(response => {
           // console.log(response.data)
           setInfo(response.data[0])
